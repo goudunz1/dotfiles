@@ -1,0 +1,21 @@
+[init]
+    defaultBranch = main
+
+[core]
+    editor = vim
+
+[user]
+    name = Yu Sheng
+    email = goudunz1@outlook.com
+
+[alias]
+    s = status
+    co = checkout
+    cob = checkout -b
+    del = branch -D
+    br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+    cm = commit -m
+    undo = reset HEAD~1
+    cls = reset --hard
+    done = push origin HEAD
+    ll = log --all --graph --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
